@@ -4,8 +4,8 @@ class Navbar extends Component {
     render() {
         return(
             <div className="navBarStyle">
-                <nav class="navbar ">
-                    <a class="navbar-brand" href="#">SpaceBook</a>  
+                <nav className="navbar ">
+                    <a className="navbar-brand homeButton" href="#">SpaceBook</a>  
                 </nav>
             </div>
         )

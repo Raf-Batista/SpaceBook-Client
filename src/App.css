@@ -41,3 +41,8 @@
   line-height: 3;
   background-color: #6008cc;
 }
+
+.homeButton {
+  color: white;
+  font-size: 2em;
+}
