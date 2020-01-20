@@ -45,4 +45,19 @@
 .homeButton {
   color: white;
   font-size: 2em;
+  margin-left: 10em;
+}
+
+.label {
+  margin-left: .5em;
+  margin-right: 1em;
+  color: white;
+}
+
+input {
+  line-height: 1.5em;
+}
+
+.login {
+  margin-right: 15em;
 }
