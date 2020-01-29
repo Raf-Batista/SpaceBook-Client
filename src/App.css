@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -35,17 +35,11 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .navBarStyle {
   line-height: 3;
   background-color: #6008cc;
-}
-
-.homeButton {
-  color: white;
-  font-size: 2em;
-  margin-left: 10em;
 }
 
 .label {
@@ -60,4 +54,34 @@ input {
 
 .login {
   margin-right: 15em;
+}
+
+.Navbar .navbar-brand {
+  margin-left: 15em;
+  color: white;
+  font-size: 2em;
+}
+
+/* large phones and small tablets */
+/* 500px / 16px = 31.25em */
+@media screen and (min-width: 31.25em) {
+  .Navbar .navbar-brand {
+    margin-left: 2.75em;
+  }
+}
+
+/* tablets and small monitors */
+/* 800px / 16px = 50em */
+@media screen and (min-width: 50em) {
+  .Navbar .navbar-brand {
+    margin-left: 2em;
+  }
+}
+
+/* laptops and desktops */
+/* 1200px / 16px = 75em */
+@media screen and (min-width: 75em) {
+  .Navbar .navbar-brand {
+    margin-left: 0;
+  }
 }
