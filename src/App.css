@@ -38,7 +38,6 @@
 } */
 
 .navBarStyle {
-  line-height: 3;
   background-color: #6008cc;
 }
 
@@ -67,6 +66,7 @@ input {
 .short-text { 
   display: none; 
 }
+
 /* large phones and small tablets */
 /* 500px / 16px = 31.25em */
 @media screen and (min-width: 31.25em) {
@@ -75,8 +75,8 @@ input {
     margin-left: 6.25em;
   } 
 
-  .navBarStyle {
-    line-height: 3em;
+  body {
+   line-height: 0em;
   }
 
   .login-btn {
@@ -93,6 +93,7 @@ input {
     display: inline-block; 
     margin-left: 0;
     font-size: .75em;
+    margin-bottom: .5em;
   }
 
   .full-text { 
@@ -127,11 +128,9 @@ input {
 
 /* tablets and small monitors */
 /* 800px / 16px = 50em */
-/* @media screen and (min-width: 50em) {
-  .Navbar .navbar-brand {
-    margin-left: 2em;
-  }
-} */
+@media screen and (min-width: 50em) {
+ 
+}
 
 /* laptops and desktops */
 /* 1200px / 16px = 75em */
@@ -142,7 +141,10 @@ input {
 
   .full-text { 
     display: inline-block; 
-    margin-top: .5em;
+  }
+
+  .navBarStyle {
+    line-height: 3em;
   }
 
 }
