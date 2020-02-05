@@ -64,24 +64,64 @@ input {
   margin-top: 1.5em;
 }
 
+.short-text { 
+  display: none; 
+}
 /* large phones and small tablets */
 /* 500px / 16px = 31.25em */
 @media screen and (min-width: 31.25em) {
-  .Navbar .navbar-brand {
-    margin-left: 4.5em;
-  }
 
   .login {
-    margin-top: 0;
-    margin-left: 5.6em;
-  } 
-
-  .label {
-    display: inline;
+    margin-left: 6.25em;
   } 
 
   .navBarStyle {
-    line-height: 1.5em;
+    line-height: 3em;
+  }
+
+  .login-btn {
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+
+  .login input {
+    margin-top: .25em;
+    margin-bottom: .25em;
+  }
+
+  .short-text { 
+    display: inline-block; 
+    margin-left: 0;
+    font-size: .75em;
+  }
+
+  .full-text { 
+    display: none; 
+  }
+
+  .Navbar .navbar-brand {
+    margin-top: auto;
+    margin-bottom: .2em;
+    min-height: 0;
+  }
+
+  input {
+    max-width: 8em;
+    margin-left: .75em;
+    margin-right: .75em;
+    max-height: 2em;
+    margin-bottom: .5em;
+  }
+
+  .login {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  form .btn {
+    max-width: 5em;
+    line-height: .85em;
   }
 }
 
@@ -95,8 +135,14 @@ input {
 
 /* laptops and desktops */
 /* 1200px / 16px = 75em */
-/* @media screen and (min-width: 75em) {
-  .Navbar .navbar-brand {
-    margin-left: 0;
+@media screen and (min-width: 75em) {
+  .short-text { 
+    display: none; 
   }
-} */
+
+  .full-text { 
+    display: inline-block; 
+    margin-top: .5em;
+  }
+
+}

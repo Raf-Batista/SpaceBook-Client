@@ -11,7 +11,10 @@ class Navbar extends Component {
                             <i class="fas fa-space-shuttle"></i>
                         </span> */}
                             
-                            <a className="navbar-brand home-button" href="#">SpaceBook</a>  
+                            <a className="navbar-brand home-button" href="#">
+                                <span class="full-text">SpaceBook</span>
+                                <span class="short-text">SB</span>
+                            </a>  
                             <Login/>
                         </nav>
                     </div>
